@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add Donation &mdash; Food Waste Reduction and Donation System</title>
+</head>
+<body>
+<header>
+<h1>Add Donation</h1>
+</header>
+
+<nav>
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="login.html">Login</a></li>
+<li><a href="register.html">Register</a></li>
+<li><a href="add-donation.html">Add Donation</a></li>
+<li><a href="donations.html">Donations</a></li>
+<li><a href="manage-donations.html">Manage Donations</a></li>
+<li><a href="delivery-management.html">Delivery Management</a></li>
+<li><a href="urgent-food.html">Urgent Food</a></li>
+<li><a href="reports.html">Reports</a></li>
+</ul>
+</nav>
+
+<main>
+<form action="#" method="post">
+<fieldset>
+<legend>Donor Information</legend>
+<div>
+<label for="donor-name"><strong>Donor or Company Name:</strong></label>
+<input type="text" id="donor-name" name="donor-name" required minlength="1" maxlength="100">
+</div>
+<div>
+<label for="donor-username">Username:</label>
+<input type="text" id="donor-username" name="donor-username" required minlength="3" maxlength="50" pattern="[a-zA-Z0-9_]{3,50}">
+</div>
+<div>
+<label for="donor-password">Password:</label>
+<input type="password" id="donor-password" name="donor-password" required minlength="6">
+</div>
+<div>
+<label for="donor-source">Donor Source:</label>
+<select id="donor-source" name="donor-source" required>
+<optgroup label="Businesses">
+<option value="Restaurant">Restaurant</option>
+<option value="Cafe">Cafe</option>
+<option value="Bakery">Bakery</option>
+<option value="Supermarket">Supermarket</option>
+</optgroup>
+<optgroup label="Individuals">
+<option value="Individual Person">Individual Person</option>
+</optgroup>
+</select>
+</div>
+<div>
+<label for="donor-email">Email Address:</label>
+<input type="email" id="donor-email" name="donor-email" required>
+</div>
+<div>
+<label for="donor-phone">Contact Phone:</label>
+<input type="tel" id="donor-phone" name="donor-phone" required pattern="^\+?[0-9]{9,15}$" minlength="9" maxlength="15">
+<small>Example: +251911234567 or 0911234567</small>
+</div>
+<div>
+<label for="donor-address">Address / Location:</label>
+<input type="text" id="donor-address" name="donor-address" required minlength="1" maxlength="200">
+</div>
+<input type="hidden" id="donation-id-hidden" name="donation-id" value="DON-000">
+</fieldset>
+
+<fieldset>
+<legend>Food Donation Information</legend>
+<p><em>Support for multiple food items under one donor.</em></p>
+<p><b>Important:</b> Please provide accurate details for each food item. All fields marked with <strong>*</strong> are required.</p>
+
+<div class="food-item-section">
+<fieldset>
+<legend>Food Item 1</legend>
+<div>
+<label for="food-name-1">Food Name:*</label>
+<input type="text" id="food-name-1" name="food-name-1" required minlength="1" maxlength="100">
+</div>
+<div>
+<label for="food-quantity-1">Quantity:*</label>
+<input type="number" id="food-quantity-1" name="food-quantity-1" required min="1" max="1000" step="1">
+</div>
+<div>
+<label for="food-unit-1">Unit:</label>
+<input type="text" id="food-unit-1" name="food-unit-1" value="kg" maxlength="20">
+</div>
+<div>
+<label for="food-freshness-1">Freshness:*</label>
+<select id="food-freshness-1" name="food-freshness-1" required>
+<option value="">Select freshness</option>
+<option value="Fresh">Fresh</option>
+<option value="Urgent">Urgent</option>
+</select>
+</div>
+<div>
+<label for="food-expiry-1">Expiry Date:*</label>
+<input type="date" id="food-expiry-1" name="food-expiry-1" required>
+</div>
+<div>
+<label for="food-description-1">Description / Additional Instructions:</label>
+<textarea id="food-description-1" name="food-description-1" maxlength="500" rows="3"></textarea>
+</div>
+<div>
+<label for="food-image-1">Food Image (optional):</label>
+<input type="file" id="food-image-1" name="food-image-1" accept="image/*">
+</div>
+<div>
+<label for="food-color-1">Preferred Label Color (optional):</label>
+<input type="color" id="food-color-1" name="food-color-1" value="#4caf50">
+</div>
+<div>
+<label for="food-recipient-1">Donation Recipient Type:</label>
+<div>
+<input type="radio" id="recipient-center-1" name="food-recipient-1" value="distribution-center" checked>
+<label for="recipient-center-1">Distribution Center</label>
+</div>
+<div>
+<input type="radio" id="recipient-street-1" name="food-recipient-1" value="street-feeding">
+<label for="recipient-street-1">Street Feeding</label>
+</div>
+</div>
+</fieldset>
+</div>
+
+<div class="food-item-section">
+<fieldset>
+<legend>Food Item 2</legend>
+<div>
+<label for="food-name-2">Food Name:</label>
+<input type="text" id="food-name-2" name="food-name-2" minlength="1" maxlength="100">
+</div>
+<div>
+<label for="food-quantity-2">Quantity:</label>
+<input type="number" id="food-quantity-2" name="food-quantity-2" min="1" max="1000" step="1">
+</div>
+<div>
+<label for="food-unit-2">Unit:</label>
+<input type="text" id="food-unit-2" name="food-unit-2" value="kg" maxlength="20">
+</div>
+<div>
+<label for="food-freshness-2">Freshness:</label>
+<select id="food-freshness-2" name="food-freshness-2">
+<option value="">Select freshness</option>
+<option value="Fresh">Fresh</option>
+<option value="Urgent">Urgent</option>
+</select>
+</div>
+<div>
+<label for="food-expiry-2">Expiry Date:</label>
+<input type="date" id="food-expiry-2" name="food-expiry-2">
+</div>
+</fieldset>
+</div>
+
+<div class="food-item-section">
+<fieldset>
+<legend>Food Item 3</legend>
+<div>
+<label for="food-name-3">Food Name:</label>
+<input type="text" id="food-name-3" name="food-name-3" minlength="1" maxlength="100">
+</div>
+<div>
+<label for="food-quantity-3">Quantity:</label>
+<input type="number" id="food-quantity-3" name="food-quantity-3" min="1" max="1000" step="1">
+</div>
+<div>
+<label for="food-unit-3">Unit:</label>
+<input type="text" id="food-unit-3" name="food-unit-3" value="kg" maxlength="20">
+</div>
+<div>
+<label for="food-freshness-3">Freshness:</label>
+<select id="food-freshness-3" name="food-freshness-3">
+<option value="">Select freshness</option>
+<option value="Fresh">Fresh</option>
+<option value="Urgent">Urgent</option>
+</select>
+</div>
+<div>
+<label for="food-expiry-3">Expiry Date:</label>
+<input type="date" id="food-expiry-3" name="food-expiry-3">
+</div>
+</fieldset>
+</div>
+
+</fieldset>
+
+<div>
+<button type="submit">Submit Donation</button>
+<button type="reset">Reset Form</button>
+<button type="button">Preview Donation (not functional in HTML stage)</button>
+</div>
+</form>
+
+<aside>
+<p><em>Note: This form is structural. Actual donation ID generation and data storage will be implemented in the Java stage.</em></p>
+</aside>
+</main>
+
+<footer>
+<p>&copy; 2026 Food Waste Reduction and Donation System. University project &mdash; HTML stage.</p>
+</footer>
+</body>
+</html>
