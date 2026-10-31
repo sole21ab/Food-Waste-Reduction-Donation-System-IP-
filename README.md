@@ -1,57 +1,79 @@
 # Food Waste Reduction and Donation System
 
-## Project Title
-Food Waste Reduction and Donation System
+## 1. Project Overview
 
-## Project Description
-A university Internet Programming project that provides a platform for food donors (restaurants, cafes, bakeries, supermarkets, and individuals) to register surplus food donations, track food availability and freshness, and coordinate delivery of donated food to distribution centers so it reaches people in need instead of being wasted.
+The **Food Waste Reduction and Donation System** is a university project developed for the Internet Programming course. It aims to reduce food waste by connecting food donors with distribution centers.
 
-## Problem Statement
-Large amounts of edible food are wasted every day by food businesses and households, while many people in communities lack reliable access to sufficient food. There is a need for a simple system to connect surplus food donors with distribution centers and food recipients, reducing food waste and supporting food security.
+The proposed system allows restaurants, cafes, bakeries, supermarkets, and individuals to register surplus food donations, monitor food availability and freshness, and coordinate the delivery of donated food to people in need.
 
-## Project Objectives
+The project is being developed in stages, starting with HTML5.
+
+## 2. Problem Statement
+
+Large quantities of edible food are wasted every day by businesses and households, while many people lack reliable access to sufficient food.
+
+A system that connects surplus food donors with distribution centers can help reduce unnecessary food waste and improve the distribution of available food to people in need.
+
+## 3. Project Objectives
+
 - Reduce food waste by redirecting surplus edible food to people in need.
-- Allow donors to register and manage food donations.
+- Provide a way for donors to register and manage food donations.
 - Track food availability, freshness, and delivery status.
-- Prioritize urgent food donations requiring fast delivery.
-- Generate summary reports covering total, available, assigned, delivered, and urgent food.
+- Prioritize urgent food donations that require faster delivery.
+- Generate summary reports showing total, available, assigned, delivered, and urgent food quantities.
 
-## Main Features
-- Register new food donations from restaurants, cafes, bakeries, supermarkets, and individuals.
-- Display and track all registered donations in a structured table.
-- Search, update, and delete donations using donor credentials (planned).
-- Assign food items to distribution centers and delivery drivers (planned).
-- Mark assigned food items as delivered (planned).
-- View urgent food donations requiring priority delivery.
-- Generate summary reports (planned).
-- Donor login and registration (planned).
-- Contact form for inquiries (planned).
+## 4. Main System Features
 
-## Technology Currently Used
-HTML5 only. No CSS, no JavaScript, and no Java are used at this stage.
+The proposed system includes the following features:
 
-## Project Development Stages
-This project is developed in stages as part of an Internet Programming course:
-1. HTML (current stage): structure and layout of all pages and forms.
-2. CSS (planned): styling and layout enhancements.
-3. Java (planned): functionality such as authentication, data storage, search, update, delete, delivery assignment, and reporting.
+- **Donation Registration:** Register surplus food donations from restaurants, cafes, bakeries, supermarkets, and individuals.
+- **Donation Listing:** Display registered donations in organized tables.
+- **Donation Management:** Search, update, and delete donation records.
+- **Delivery Management:** Assign food donations to distribution centers and delivery drivers.
+- **Delivery Tracking:** Update the status of assigned donations when they are delivered.
+- **Urgent Food Monitoring:** Identify donations that require priority delivery.
+- **Reports:** Display summaries of food quantities and donation statuses.
+- **User Authentication:** Provide donor registration and login interfaces.
+- **Contact:** Provide a form for inquiries and communication.
 
-CSS and Java implementation are not yet complete and are not part of the current stage.
+*These are the proposed system features. The current HTML stage provides the page structures and interfaces; application functionality will be developed in later stages.*
 
-## Project Folder Structure
+## 5. Technologies and Development Stages
+
+### Current Technology
+
+- **HTML5:** Used to structure the website content, pages, forms, tables, and multimedia elements.
+
+The current stage does not use CSS, JavaScript, or Java.
+
+### Development Stages
+
+The project is planned in three stages:
+
+1. **HTML5 – Current Stage:** Develop the website structure, navigation, forms, tables, and multimedia content.
+2. **CSS – Planned:** Improve the website's appearance, styling, layout, and responsiveness.
+3. **Java – Planned:** Implement application functionality, including authentication, donation management, delivery coordination, and reporting.
+
+## 6. Project Folder Structure
+
+```text
 Food/
+│
 ├── index.html
 ├── README.md
+│
 ├── images/
-│   ├── logo.svg
-│   ├── food-donation.svg
-│  
+│   ├── logo.png
+│   ├── food-donation.png
+│
 ├── videos/
-│   ├── intro.mp4 (missing - needs to be added)
-│   └── intro.webm (missing - needs to be added)
+│   ├── intro.mp4
+│   ├── intro-captions.vtt
+│   └── system-overview.mp3
+│
 └── pages/
-    ├── add-donation.html
     ├── about.html
+    ├── add-donation.html
     ├── contact.html
     ├── delivery-management.html
     ├── donations.html
@@ -60,84 +82,129 @@ Food/
     ├── register.html
     ├── reports.html
     └── urgent-food.html
+```
 
-## Team Project Information
-This is a team project for an Internet Programming course. Team member names are not listed here. All pages are developed collaboratively by the team under the HTML stage, with CSS and Java stages planned for later coursework.
+## 7. Team Project Information
 
-## HTML Concepts Demonstrated
+This is a collaborative university project developed for the Internet Programming course.
 
-The following HTML5 concepts are demonstrated across the project:
+Team members share development responsibilities across the website's pages and features. The project is currently in the HTML5 development stage.
+
+## 8. HTML5 Concepts Demonstrated
+
+The following HTML elements, attributes, and concepts are demonstrated throughout the project.
 
 ### A. Text Formatting Elements
-| Element | Page | Usage |
-|---------|------|-------|
-| `<b>` | about.html, add-donation.html | Bold text for donor types and important labels |
-| `<strong>` | index.html, about.html, contact.html, login.html, register.html, manage-donations.html, delivery-management.html | Strong importance for key instructions |
-| `<i>` | about.html | Italic for technical term "first-in, first-out" |
-| `<em>` | index.html, about.html, contact.html | Emphasis on notes and stage warnings |
-| `<u>` | index.html | Underline for course project label |
-| `<mark>` | about.html, index.html, urgent-food.html | Highlight urgent food information |
-| `<small>` | about.html, index.html, manage-donations.html, register.html | Fine print and supplementary notes |
-| `<del>` | about.html, manage-donations.html | Show removed/old values in record updates |
-| `<ins>` | about.html, manage-donations.html | Show inserted/new values in record updates |
-| `<sub>` | about.html | Subscript in chemical notation (CO₂) |
-| `<sup>` | about.html | Superscript in unit notation (cm³) |
+
+| Element | Pages | Purpose |
+|---|---|---|
+| `<b>` | about.html, add-donation.html | Bold text for labels and important information |
+| `<strong>` | index.html, about.html, contact.html, login.html, register.html, manage-donations.html, delivery-management.html | Indicate important information |
+| `<i>` | about.html | Italicize technical terms |
+| `<em>` | index.html, about.html, contact.html | Emphasize notes and warnings |
+| `<u>` | index.html | Underline the course project label |
+| `<mark>` | index.html, about.html, urgent-food.html | Highlight important information |
+| `<small>` | index.html, about.html, manage-donations.html, register.html | Display supplementary information |
+| `<del>` | about.html, manage-donations.html | Demonstrate deleted or previous values |
+| `<ins>` | about.html, manage-donations.html | Demonstrate inserted or updated values |
+| `<sub>` | about.html | Demonstrate subscript notation |
+| `<sup>` | about.html | Demonstrate superscript notation |
 
 ### B. Image Insertion
-| Page | Image | Alt Text |
-|------|-------|----------|
-| index.html | images/logo.svg | Food Waste Reduction and Donation System logo |
-| about.html | images/food-donation.svg | Food donation process illustration: donor to distribution center |
-| contact.html | images/logo.svg | Food Waste Reduction and Donation System logo |
+
+| Page | Image | Purpose |
+|---|---|---|
+| index.html | `images/logo.png` | Display the system logo |
+| about.html | `images/food-donation.png` | Illustrate the food donation process |
+| contact.html | `images/logo.png` | Display the system logo |
 
 ### C. Line Breaks and Horizontal Rules
-- `<br>`: Used on about.html in the Technical Notes section to break lines within a paragraph
-- `<hr>`: Used on index.html, about.html, donations.html, urgent-food.html, reports.html to separate sections
 
-### D. Tables
-| Page | Table Features |
-|------|---------------|
-| donations.html | `<table border="1" cellpadding="5" cellspacing="0">`, `colspan="8"` |
-| urgent-food.html | `<table border="1" cellpadding="5" cellspacing="0">`, `colspan="7"` |
-| reports.html | `<table border="1" cellpadding="5" cellspacing="0">`, `colspan="2"` |
+- `<br>`: Used in about.html to create line breaks within text.
+- `<hr>`: Used in index.html, about.html, donations.html, urgent-food.html, and reports.html to separate content sections.
 
-### E. Forms and Form Attributes
-All forms use `action="#" method="post"`. Input types demonstrated:
-- `text`: donor names, food names, addresses, subjects
-- `password`: login and registration passwords
-- `file`: food donation image upload (add-donation.html)
-- `email`: donor and contact email addresses
-- `number`: food quantity, donation ID
-- `date`: food expiry date, pickup/delivery dates
-- `hidden`: donation ID internal field (add-donation.html), form type (login.html)
-- `radio`: donation recipient type (add-donation.html)
-- `checkbox`: terms agreement (contact.html), deletion confirmation (manage-donations.html), remember me (login.html)
-- `color`: preferred label color (add-donation.html)
+### D. HTML Tables
+
+| Page | Demonstrated Features |
+|---|---|
+| donations.html | Tables using `border`, `cellpadding`, `cellspacing`, and `colspan` |
+| urgent-food.html | Tables using `border`, `cellpadding`, `cellspacing`, and `colspan` |
+| reports.html | Tables using `border`, `cellpadding`, `cellspacing`, and `colspan` |
+
+### E. Forms and Input Types
+
+The project demonstrates HTML forms using `action="#"` and `method="post"`.
+
+The following input types are included:
+
+| Input Type | Usage |
+|---|---|
+| `text` | Donor names, food names, addresses, and subjects |
+| `password` | Login and registration passwords |
+| `file` | Food donation image upload |
+| `email` | Donor and contact email addresses |
+| `number` | Food quantities and donation IDs |
+| `date` | Food expiry, pickup, and delivery dates |
+| `hidden` | Internal form values |
+| `radio` | Selection options |
+| `checkbox` | Agreement and confirmation options |
+| `color` | Preferred label color |
 
 ### F. Fieldset and Legend
-Used on all form pages to group related fields: add-donation.html, contact.html, delivery-management.html, login.html, manage-donations.html, register.html
+
+`<fieldset>` and `<legend>` are used to group related form fields on:
+
+- add-donation.html
+- contact.html
+- delivery-management.html
+- login.html
+- manage-donations.html
+- register.html
 
 ### G. Dropdown Lists and Text Areas
-- `<select>` / `<option>`: donor source, freshness options on multiple pages
-- `<optgroup>`: grouping donor sources by "Businesses" and "Individuals" (add-donation.html, register.html)
-- `<textarea>`: contact message (contact.html), food description (add-donation.html)
+
+- `<select>` and `<option>`: Provide selectable options, such as donor sources and food freshness.
+- `<optgroup>`: Groups donor sources into businesses and individuals.
+- `<textarea>`: Provides larger text input areas for contact messages and food descriptions.
 
 ### H. Buttons
-- `type="submit"`: form submission on all forms
-- `type="reset"`: clear form fields on login, register, contact, add-donation, manage-donations, delivery-management
-- `type="button"`: non-functional demonstration buttons clearly marked "(not functional in HTML stage)"
+
+The project demonstrates the following button types:
+
+- `type="submit"`: Used for form submission.
+- `type="reset"`: Used to clear form fields.
+- `type="button"`: Used for demonstration buttons that do not perform application actions in the current HTML stage.
 
 ### I. Form Validation Attributes
-- `required`: mandatory fields across all forms
-- `pattern`: username pattern `[a-zA-Z0-9_]{3,50}`, Ethiopian phone pattern `^\+?[0-9]{9,15}$`
-- `min` / `max`: quantity min="1", max="1000", donation ID min="1"
-- `step`: step="1" for whole number quantities
 
-### J. Multimedia
-- `<video controls>`: index.html references videos/intro.mp4 and videos/intro.webm (video files need to be added to videos/ folder)
-- `<audio controls>`: about.html references videos/system-overview.mp3 (audio file needs to be added)
+The following HTML form validation attributes are demonstrated:
 
-## Known Limitations
-- The videos/ folder is empty; intro.mp4, intro.webm, and system-overview.mp3 need to be added for multimedia to work.
-- All forms are structural only; no data is stored or processed until the Java stage.
-- CSS and Java will be developed in later coursework stages.
+- `required`: Makes fields mandatory.
+- `pattern`: Defines input formats, including username and phone number patterns.
+- `min` and `max`: Restrict numerical input ranges.
+- `step`: Defines permitted numerical increments.
+
+### J. Multimedia Elements
+
+The project demonstrates HTML5 multimedia elements:
+
+- `<video controls>`: Displays the introductory video on index.html.
+- `<track>`: Provides English captions for the introductory video using `videos/intro-captions.vtt`.
+- `<audio controls>`: Plays the system overview audio on about.html.
+
+## 9. Known Limitations
+
+The current implementation focuses on the HTML structure and content of the website.
+
+- Forms are structural only and do not store or process submitted information.
+- User login and registration interfaces do not provide actual authentication.
+- Donation management operations are not connected to a database.
+- Delivery assignment and tracking are not yet functional.
+- Reports do not retrieve or calculate data dynamically.
+- CSS styling and Java functionality are planned for later development stages.
+
+---
+
+**Project:** Food Waste Reduction and Donation System  
+**Course:** Internet Programming  
+**Current Development Stage:** HTML5
