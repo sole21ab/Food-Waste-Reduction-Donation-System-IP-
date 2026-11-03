@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login &mdash; Food Waste Reduction and Donation System</title>
+</head>
+<body>
+<header>
+<h1>Login</h1>
+</header>
+
+<nav>
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="login.html">Login</a></li>
+<li><a href="register.html">Register</a></li>
+<li><a href="add-donation.html">Add Donation</a></li>
+<li><a href="donations.html">Donations</a></li>
+<li><a href="manage-donations.html">Manage Donations</a></li>
+<li><a href="delivery-management.html">Delivery Management</a></li>
+<li><a href="urgent-food.html">Urgent Food</a></li>
+<li><a href="reports.html">Reports</a></li>
+</ul>
+</nav>
+
+<main>
+<form action="#" method="post">
+<fieldset>
+<legend>Existing Donor Login</legend>
+<p><strong>Enter your email or username and password</strong> to log in to your donor account.</p>
+<div>
+<label for="login-identity">Email or Username:</label>
+<input type="text" id="login-identity" name="login-identity" required minlength="1" maxlength="100">
+</div>
+<div>
+<label for="login-password">Password:</label>
+<input type="password" id="login-password" name="login-password" required minlength="6">
+</div>
+<div>
+<label for="login-remember">Remember me:</label>
+<input type="checkbox" id="login-remember" name="login-remember">
+</div>
+<input type="hidden" id="login-form-type" name="form-type" value="donor-login">
+<button type="submit">Login</button>
+<button type="reset">Reset</button>
+</fieldset>
+</form>
+
+<p>New to the system? <a href="register.html">Create a donor account</a>.</p>
+<p>Return to the <a href="../index.html">Home</a> page.</p>
+
+<aside>
+<p><em>Note: This login form is structural. Actual authentication will be implemented in the Java stage.</em></p>
+</aside>
+</main>
+
+<footer>
+<p>&copy; 2026 Food Waste Reduction and Donation System. University project &mdash; HTML stage.</p>
+</footer>
+</body>
+</html>
