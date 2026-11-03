@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Delivery Management &mdash; Food Waste Reduction and Donation System</title>
+</head>
+<body>
+<header>
+<h1>Delivery Management</h1>
+</header>
+
+<nav>
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="login.html">Login</a></li>
+<li><a href="register.html">Register</a></li>
+<li><a href="add-donation.html">Add Donation</a></li>
+<li><a href="donations.html">Donations</a></li>
+<li><a href="manage-donations.html">Manage Donations</a></li>
+<li><a href="delivery-management.html">Delivery Management</a></li>
+<li><a href="urgent-food.html">Urgent Food</a></li>
+<li><a href="reports.html">Reports</a></li>
+</ul>
+</nav>
+
+<main>
+<section aria-labelledby="assign-heading">
+<h2 id="assign-heading">Assign Delivery</h2>
+<p><strong>Urgent food should be prioritized</strong> during assignment.</p>
+<form action="#" method="post">
+<fieldset>
+<legend>Available Food Selection</legend>
+<p>Select the available food items to assign for delivery:</p>
+<div>
+<input type="checkbox" id="food-assign-1" name="food-assign-1" value="item-1">
+<label for="food-assign-1">Food Item 1 (Fresh)</label>
+</div>
+<div>
+<input type="checkbox" id="food-assign-2" name="food-assign-2" value="item-2">
+<label for="food-assign-2">Food Item 2 (Urgent)</label>
+</div>
+<div>
+<input type="checkbox" id="food-assign-3" name="food-assign-3" value="item-3">
+<label for="food-assign-3">Food Item 3 (Fresh)</label>
+</div>
+</fieldset>
+
+<fieldset>
+<legend>Distribution Center</legend>
+<div>
+<label for="center-name">Distribution Center Name:</label>
+<input type="text" id="center-name" name="center-name" required minlength="1" maxlength="100">
+</div>
+<div>
+<label for="center-location">Center Location:</label>
+<input type="text" id="center-location" name="center-location" required minlength="1" maxlength="100">
+</div>
+</fieldset>
+
+<fieldset>
+<legend>Delivery Driver</legend>
+<div>
+<label for="driver-name">Driver Name:</label>
+<input type="text" id="driver-name" name="driver-name" required minlength="1" maxlength="100">
+</div>
+<div>
+<label for="vehicle-type">Vehicle Type:</label>
+<input type="text" id="vehicle-type" name="vehicle-type" required minlength="1" maxlength="100">
+</div>
+<div>
+<label for="license-plate">License Plate:</label>
+<input type="text" id="license-plate" name="license-plate" required minlength="1" maxlength="50">
+</div>
+</fieldset>
+
+<fieldset>
+<legend>Pickup and Delivery Details</legend>
+<div>
+<label for="pickup-date">Pickup Date:</label>
+<input type="date" id="pickup-date" name="pickup-date" required>
+</div>
+<div>
+<label for="delivery-date">Expected Delivery Date:</label>
+<input type="date" id="delivery-date" name="delivery-date">
+</div>
+<div>
+<label for="pickup-location">Pickup Location:</label>
+<input type="text" id="pickup-location" name="pickup-location" required minlength="1" maxlength="200">
+</div>
+<div>
+<label for="destination">Destination (Distribution Center or Street Feeding):</label>
+<input type="text" id="destination" name="destination" required minlength="1" maxlength="200">
+</div>
+</fieldset>
+
+<button type="submit">Assign Delivery (not functional in HTML stage)</button>
+<button type="reset">Reset</button>
+</form>
+</section>
+
+<section aria-labelledby="delivered-heading">
+<h2 id="delivered-heading">Mark Delivered</h2>
+<form action="#" method="post">
+<fieldset>
+<legend>Assigned Food Items</legend>
+<p>Select the assigned food items to confirm as delivered:</p>
+<div>
+<input type="checkbox" id="delivered-1" name="delivered-1" value="assigned-item-1">
+<label for="delivered-1">Assigned Food Item 1</label>
+</div>
+<div>
+<input type="checkbox" id="delivered-2" name="delivered-2" value="assigned-item-2">
+<label for="delivered-2">Assigned Food Item 2</label>
+</div>
+<div>
+<input type="checkbox" id="delivered-3" name="delivered-3" value="assigned-item-3">
+<label for="delivered-3">Assigned Food Item 3</label>
+</div>
+<button type="submit">Mark as Delivered (not functional in HTML stage)</button>
+<button type="reset">Reset</button>
+</fieldset>
+</form>
+</section>
+
+<aside>
+<p><em>Note: Delivery assignment and delivery confirmation will be implemented in the Java stage.</em></p>
+</aside>
+
+<footer>
+<p>&copy; 2026 Food Waste Reduction and Donation System. University project &mdash; HTML stage.</p>
+</footer>
+</body>
+</html>
