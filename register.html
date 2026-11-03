@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register &mdash; Food Waste Reduction and Donation System</title>
+</head>
+<body>
+<header>
+<h1>Register</h1>
+</header>
+
+<nav>
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="login.html">Login</a></li>
+<li><a href="register.html">Register</a></li>
+<li><a href="add-donation.html">Add Donation</a></li>
+<li><a href="donations.html">Donations</a></li>
+<li><a href="manage-donations.html">Manage Donations</a></li>
+<li><a href="delivery-management.html">Delivery Management</a></li>
+<li><a href="urgent-food.html">Urgent Food</a></li>
+<li><a href="reports.html">Reports</a></li>
+</ul>
+</nav>
+
+<main>
+<form action="#" method="post">
+<fieldset>
+<legend>Donor Registration</legend>
+<p><strong>Register as a food donor.</strong> Provide your details below.</p>
+<div>
+<label for="reg-name">Donor or Company Name:</label>
+<input type="text" id="reg-name" name="reg-name" required minlength="1" maxlength="100">
+</div>
+<div>
+<label for="reg-username">Username:</label>
+<input type="text" id="reg-username" name="reg-username" required minlength="3" maxlength="50" pattern="[a-zA-Z0-9_]{3,50}">
+<small>Username must be 3-50 characters, letters, numbers, and underscore only.</small>
+</div>
+<div>
+<label for="reg-password">Password:</label>
+<input type="password" id="reg-password" name="reg-password" required minlength="6">
+</div>
+<div>
+<label for="reg-confirm-password">Confirm Password:</label>
+<input type="password" id="reg-confirm-password" name="reg-confirm-password" required minlength="6">
+</div>
+<div>
+<label for="reg-source">Donor Source:</label>
+<select id="reg-source" name="reg-source" required>
+<optgroup label="Businesses">
+<option value="Restaurant">Restaurant</option>
+<option value="Cafe">Cafe</option>
+<option value="Bakery">Bakery</option>
+<option value="Supermarket">Supermarket</option>
+</optgroup>
+<optgroup label="Individuals">
+<option value="Individual Person">Individual Person</option>
+</optgroup>
+</select>
+</div>
+<div>
+<label for="reg-email">Email Address:</label>
+<input type="email" id="reg-email" name="reg-email" required>
+</div>
+<div>
+<label for="reg-contact">Contact Information:</label>
+<input type="tel" id="reg-contact" name="reg-contact" required pattern="^\+?[0-9]{9,15}$" minlength="9" maxlength="15">
+<small>Example: +251911234567 or 0911234567</small>
+</div>
+<div>
+<label for="reg-address">Address / Location:</label>
+<input type="text" id="reg-address" name="reg-address" required minlength="1" maxlength="200">
+</div>
+<button type="submit">Register</button>
+<button type="reset">Reset</button>
+<button type="button">Validate Form (not functional in HTML stage)</button>
+</fieldset>
+</form>
+
+<p>Already have an account? <a href="login.html">Log in</a>.</p>
+<p>Return to the <a href="../index.html">Home</a> page.</p>
+
+<aside>
+<p><em>Note: This registration form is structural. Actual account creation and data storage will be implemented in the Java stage.</em></p>
+</aside>
+</main>
+
+<footer>
+<p>&copy; 2026 Food Waste Reduction and Donation System. University project &mdash; HTML stage.</p>
+</footer>
+</body>
+</html>
