@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manage Donations &mdash; Food Waste Reduction and Donation System</title>
+</head>
+<body>
+<header>
+<h1>Manage Donations</h1>
+</header>
+
+<nav>
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="login.html">Login</a></li>
+<li><a href="register.html">Register</a></li>
+<li><a href="add-donation.html">Add Donation</a></li>
+<li><a href="donations.html">Donations</a></li>
+<li><a href="manage-donations.html">Manage Donations</a></li>
+<li><a href="delivery-management.html">Delivery Management</a></li>
+<li><a href="urgent-food.html">Urgent Food</a></li>
+<li><a href="reports.html">Reports</a></li>
+</ul>
+</nav>
+
+<main>
+<section aria-labelledby="search-heading">
+<h2 id="search-heading">Search Donation</h2>
+<form action="#" method="post">
+<fieldset>
+<legend>Search by Donation ID</legend>
+<div>
+<label for="search-donation-id"><strong>Donation ID:</strong></label>
+<input type="number" id="search-donation-id" name="search-donation-id" required min="1" step="1">
+</div>
+<button type="submit">Search</button>
+<button type="reset">Reset</button>
+</fieldset>
+</form>
+<div id="search-result">
+<h3>Search Result</h3>
+<p>The search result will be displayed here once a donation is found.</p>
+</div>
+</section>
+
+<section aria-labelledby="update-heading">
+<h2 id="update-heading">Update Donation</h2>
+<form action="#" method="post">
+<fieldset>
+<legend>Donor Login</legend>
+<p><em>Authentication required to update donations.</em></p>
+<div>
+<label for="update-username">Username:</label>
+<input type="text" id="update-username" name="update-username" required minlength="3">
+</div>
+<div>
+<label for="update-password">Password:</label>
+<input type="password" id="update-password" name="update-password" required minlength="6">
+</div>
+</fieldset>
+
+<fieldset>
+<legend>Add Food</legend>
+<div>
+<label for="update-add-food-name">Food Name:</label>
+<input type="text" id="update-add-food-name" name="update-add-food-name" required minlength="1" maxlength="100">
+</div>
+<div>
+<label for="update-add-quantity">Quantity:</label>
+<input type="number" id="update-add-quantity" name="update-add-quantity" required min="1" max="1000" step="1">
+</div>
+<div>
+<label for="update-add-freshness">Freshness:</label>
+<select id="update-add-freshness" name="update-add-freshness" required>
+<option value="">Select freshness</option>
+<option value="Fresh">Fresh</option>
+<option value="Urgent">Urgent</option>
+</select>
+</div>
+<div>
+<label for="update-add-expiry">Expiry Date:</label>
+<input type="date" id="update-add-expiry" name="update-add-expiry">
+</div>
+<button type="button">Add Food (not functional in HTML stage)</button>
+</fieldset>
+
+<fieldset>
+<legend>Reduce Quantity</legend>
+<div>
+<label for="update-reduce-food-name">Food Name:</label>
+<input type="text" id="update-reduce-food-name" name="update-reduce-food-name" required minlength="1" maxlength="100">
+</div>
+<div>
+<label for="update-reduce-quantity">Quantity to Reduce:</label>
+<input type="number" id="update-reduce-quantity" name="update-reduce-quantity" required min="1" step="1">
+</div>
+<div>
+<label for="update-reduce-freshness">Freshness:</label>
+<select id="update-reduce-freshness" name="update-reduce-freshness">
+<option value="">Select freshness</option>
+<option value="Fresh">Fresh</option>
+<option value="Urgent">Urgent</option>
+</select>
+</div>
+<button type="button">Reduce Quantity (not functional in HTML stage)</button>
+</fieldset>
+</form>
+<p><small>Example of record update: <del>Quantity: 10 kg</del> <ins>Quantity: 15 kg</ins></small></p>
+</section>
+
+<section aria-labelledby="delete-heading">
+<h2 id="delete-heading">Delete Donation</h2>
+<form action="#" method="post">
+<fieldset>
+<legend>Delete Donation</legend>
+<div>
+<label for="delete-donation-id"><strong>Donation ID:</strong></label>
+<input type="number" id="delete-donation-id" name="delete-donation-id" required min="1">
+</div>
+<div>
+<label for="delete-username">Username:</label>
+<input type="text" id="delete-username" name="delete-username" required minlength="3">
+</div>
+<div>
+<label for="delete-password">Password:</label>
+<input type="password" id="delete-password" name="delete-password" required minlength="6">
+</div>
+<div>
+<label for="delete-confirm">Confirm Deletion</label>
+<input type="checkbox" id="delete-confirm" name="delete-confirm" required>
+</div>
+<button type="button">Delete Donation (not functional in HTML stage)</button>
+<button type="reset">Reset</button>
+</fieldset>
+<div id="delete-confirmation">
+<h3>Deletion Confirmation</h3>
+<p>A confirmation message will be displayed here after the donation is deleted.</p>
+</div>
+</section>
+</main>
+
+<aside>
+<p><em>Note: Search, update, and delete operations require donor authentication and data processing, which will be implemented in the Java stage.</em></p>
+</aside>
+
+<footer>
+<p>&copy; 2026 Food Waste Reduction and Donation System. University project &mdash; HTML stage.</p>
+</footer>
+</body>
+</html>
